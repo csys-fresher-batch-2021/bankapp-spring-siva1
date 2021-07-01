@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<title>Bank APP</title>
+</head>
+<body onload="filterAccNo()">
+	<header id="header"></header>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+	
+	<h3>Welcome To Bank APP</h3>
+	<div class="mb-10 col-10">
+		<label>Search</label> <input type="number" class="brandFilter"
+			id="accno" oninput="filterAccNo()" min="1"
+			placeholder="Account Number">
+	</div>
+	<table class="table table-dark table-borderless">
+		<caption>Users bank account details</caption>
+		<thead>
+			<tr>
+				<th scope="col">Name</th>
+				<th scope="col">Account Number</th>
+				<th scope="col">Email Id</th>
+				<th scope="col">MobileNumber</th>
+				<th scope="col">Address</th>
+				<th scope="col">Balance</th>
+				<th scope="col">CreatedDate</th>
+				<th scope="col">AccountStatus</th>
+				<th scope="col">StatusButton</th>
+			</tr>
+
+		</thead>
+		<tbody id="details">
+		</tbody>
+
+	</table>
+	<script src="js/adminDisplay-component.js">
+	
+	</script>
+</body>
+</html>
+
