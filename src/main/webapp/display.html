@@ -4,20 +4,13 @@
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
 <title>Bank APP</title>
 </head>
-<body onload="filterAccNo()">
+<body>
 	<header id="header"></header>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
 	
-	<h3>Welcome To Bank APP</h3>
-	<div class="mb-10 col-10">
-		<label>Search</label> <input type="number" class="brandFilter"
-			id="accno" oninput="filterAccNo()" min="1"
-			placeholder="Account Number">
-	</div>
+	<h3>Account Details</h3>
 	<table class="table table-dark table-borderless">
 		<caption>Users bank account details</caption>
 		<thead>
@@ -30,17 +23,17 @@
 				<th scope="col">Balance</th>
 				<th scope="col">CreatedDate</th>
 				<th scope="col">AccountStatus</th>
-				<th scope="col">StatusButton</th>
+				<th scope="col">Status Button</th>
+
 			</tr>
 
 		</thead>
-		<tbody id="details">
+		<tbody id="userlist">
 		</tbody>
 
+
 	</table>
-	<script src="js/adminDisplay-component.js">
-	
+	<script src="js/display-component.js">
 	</script>
 </body>
 </html>
-

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Bank APP</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+<body>
+	<header id="header"></header>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+	<main class="container-fluid">
+	<h3>Transfer Funds</h3>
+	<div style= "color: red" id="message"></div>
+		<form  id="transferForm" novalidate="novalidate" method="get" onsubmit="transfer()">
+			
+			<div class="mb-2 col-4">
+				<label>Sender AccountNumber</label> <input type="number" name="accno1"
+					id="accno1" readonly ><br />
+			</div>
+			<div class="mb-2 col-4">
+				<label>Receiver AccountNumber</label> <input type="number" name="accno2"
+					id="accno2" placeholder="Enter AccountNumber" min="1" required autofocus><br />
+				<div class="invalid-feedback">Please Enter Receiver Account Number</div>
+
+			</div>
+			<div class="mb-2 col-4">
+				<label>Enter Amount</label> <input type="number" name="amount"
+					id="amount" min = "10" max="100000"required placeholder="Enter amount here"><br />
+				<div class="invalid-feedback">Please Enter Amount</div>
+
+			</div>
+			<div class="mb-2 col-4">
+				<button class="btn btn-info">Transfer</button>
+				<a href="display.jsp" class="btn btn-danger">Cancel</a>
+			
+			</div>
+		</form>
+	</main>
+	<script src= "js/transferAmount-component.js">
+		
+	</script>
+</body>
+</html>
