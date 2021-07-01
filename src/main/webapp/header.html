@@ -1,0 +1,59 @@
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<header>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+	
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#" data-loggedIn="false">Bank APP</a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" >Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+     
+      <li class="nav-item active">
+        <a class="nav-link" href="login.html" data-loggedIn="false">UserLogin</a>
+      </li>
+      <li class="nav-item ">
+       <a class="nav-link" href="adminLogin.html" data-loggedIn="false">AdminLogin</a>    
+       </li>
+        <li class="nav-item">
+        <a class="nav-link" href="registration.html" data-loggedIn="false">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="display.html" data-loggedIn="user">Account</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="transactionSummary.html" data-loggedIn="user">Overall Statement</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="miniStatement.html" data-loggedIn="user">MiniStatement</a>
+      </li>
+      
+      
+        <li class="nav-item">
+        <a class="nav-link" href="#" data-loggedIn="true">Welcome</a>
+     	 </li>
+		<li class="nav-item">
+        <a class="nav-link" href="#" onclick="logout()" data-loggedIn="true">Logout</a>
+        
+      </li>
+      
+      </ul>
+      <script src="js/header-component.js"></script>
+   
+  </div>
+</nav>
+</header>
+
+

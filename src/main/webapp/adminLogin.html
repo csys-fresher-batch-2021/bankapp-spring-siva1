@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+	integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<title>Admin Login</title>
+</head>
+<body>
+	<header id="header"></header>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<main class="container-fluid">
+		<h3>Admin Login</h3>
+		<div style="color: red" id="message"></div>
+
+		<form id="loginForm" onsubmit="adminLogin()" novalidate="novalidate">
+			<div class="mb-2 col-4">
+				<label>Admin Name</label> <input type="text" name="userName"
+					id="userName" autocomplete="off" required
+					placeholder="Enter User Name" class="form-control" autofocus><br />
+				<div class="invalid-feedback">Please Enter Name.</div>
+			</div>
+			<div class="mb-2 col-4">
+				<label>Admin Password</label> <input type="password" name="password"
+					id="password" autocomplete="off" required class="form-control"
+					placeholder="Enter Password"><br />
+				<div class="invalid-feedback">Please Enter Password.</div>
+			</div>
+			<div class="mb-2 col-4">
+				<button class="btn btn-primary" type="submit">Submit</button>
+				<button class="btn btn-warning" type="reset">Reset</button>
+			</div>
+			<p style="color: pink">Note: Admin Name=Admin password=Admin@123</p>
+		</form>
+	</main>
+	<script src="js/adminLogin-component.js">
+		
+	</script>
+</body>
+</html>
