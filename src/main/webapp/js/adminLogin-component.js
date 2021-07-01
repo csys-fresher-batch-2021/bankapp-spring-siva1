@@ -20,7 +20,6 @@ function adminLogin() {
 				
 				axios.post(url,user).then(res=>{
 					 let name = JSON.stringify(res.data.name);
-					 alert(name);
 					 localStorage.setItem("LOGGED_IN_USER",name);
 					alert("Login Success");
 					window.location.href="adminDisplay.html";
